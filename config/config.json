@@ -1,0 +1,15 @@
+{
+    "black_ratio": 0.4,
+    "byzantine_quantity": 0,
+    "communication_range": 50,
+    "group_quantity": 0,
+    "max_byzantine_quantity": 5,
+    "max_velocity": 7.5,
+    "repetitions": 10,
+    "result_path": "../../data",
+    "robots_quantity": 10,
+    "serial_number": 1,
+    "size": 2,
+    "tiles_quantity": 400,
+    "time_step": 120
+}

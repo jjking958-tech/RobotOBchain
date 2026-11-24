@@ -1,0 +1,13 @@
+n_messengers,dwell,seed,converged,convergence_rounds
+0,3,0,False,600
+0,3,1,False,600
+0,3,2,False,600
+1,5,0,True,436
+1,5,1,True,81
+1,5,2,True,306
+1,2,0,True,75
+1,2,1,True,67
+1,2,2,True,53
+2,2,0,True,63
+2,2,1,False,600
+2,2,2,True,69

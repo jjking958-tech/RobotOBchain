@@ -1,0 +1,31 @@
+RobotOBchain —— 第三方组件与算法致谢
+=====================================
+
+1. Hashgraph 参考实现
+   controllers/blockchain/swirld.py、swirldsRestart.py、utils.py、viz.py
+   及 swarm_collab/consensus/hashgraph_core.py 中的 Hashgraph 共识算法
+   （事件结构、divide_rounds、decide_fame 虚拟投票、find_order 公平排序）
+   改编自社区 MIT 许可证开源的 Hashgraph Python 参考实现，并针对
+   多机器人实验场景（payload 传输、分组估计、拜占庭过滤接口）进行了
+   修改与扩展。
+
+   Hashgraph 算法出处:
+   L. Baird, "Hashgraph Consensus: Fair, Fast, Byzantine Fault Tolerant
+   Distributed State Consensus" (2016).
+
+   本仓库整体以 MIT 许可证发布（见 LICENSE）。
+
+2. W-MSR 基线
+   swarm_collab/byzantine/wmsr.py 实现的 Weighted-Mean Subsequence
+   Reduced (W-MSR) 算法用于对比实验，算法出处:
+   H. Zhang, Z. Feng, et al., distributed subsequence reduction approach
+   to resilient consensus/fault tolerance 文献体系。
+
+3. 网络模型与可视化
+   experiments/ 中的图表使用 matplotlib（BSD 许可）生成；
+   实验依赖 numpy (BSD)、scipy (BSD)、scikit-learn (BSD)、
+   pyemd (GPL) —— 均通过 requirements.txt 声明。
+
+4. 机器人仿真
+   controllers/ 与 worlds/ 依赖 Cyberbotics Webots (Apache 2.0) 与
+   ROS，仅在本仓库内保存实验配置与控制器代码。
